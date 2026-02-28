@@ -220,7 +220,7 @@ export default function About({ onNavigate }) {
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-2 border-gray-700 bg-gray-900 shadow-2xl shadow-black/60">
                   <img
-                    src="/src/assets/images/uzair.png"
+                    src="/images/uzair.png"
                     alt="Uzair Waseem"
                     className="w-full h-full object-cover"
                     onError={e => {
