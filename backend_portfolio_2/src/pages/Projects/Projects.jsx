@@ -20,7 +20,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'SaaS Platform',
-    image: '/src/assets/images/School Management System.png',
+    image: '/images/School Management System.png',
     description:
       'A fully functional SaaS-based School Management System designed to manage multi-branch institutions under a single platform. Focuses heavily on financial intelligence, institutional workflows, and structured role management — suitable for real-world deployment.',
     highlights: [
@@ -52,7 +52,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'AI Tool',
-    image: '/src/assets/images/Datavo.png',
+    image: '/images/Datavo.png',
     description:
       'An AI-powered system that generates clean, structured database schemas — but only after refining requirements through structured clarification. Unlike generic LLM schema generators, Datavo asks questions, avoids assumptions, and produces structured output.',
     highlights: [
@@ -84,7 +84,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'eCommerce App',
-    image: '/src/assets/images/UzairMart.png',
+    image: '/images/UzairMart.png',
     description:
       'A Django-based eCommerce web application simulating a real-world online store. Focused heavily on backend logic, user authentication security, and real-world cart handling complexity — including multi-item cart, email verification, and secure password reset.',
     highlights: [
@@ -116,7 +116,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'AI SaaS Tool',
-    image: '/src/assets/images/BusinessPulse.png',
+    image: '/images/BusinessPulse.png',
     description:
       'A SaaS-based AI decision support system for low-budget startups and small business owners. Focuses on structured business data, scenario-based decision testing, and actionable insights — built with a marketing-first mindset, not hype-driven AI features.',
     highlights: [
