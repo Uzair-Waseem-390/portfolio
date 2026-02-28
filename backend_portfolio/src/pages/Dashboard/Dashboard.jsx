@@ -63,10 +63,10 @@ export default function Dashboard({ setPage }) {
 
           <div className="hero-info anim-item" style={{ '--delay': '0.05s' }}>
             <div className="hero-tag">SIMULATED PRODUCTION ENVIRONMENT</div>
-            <h1 className="hero-title">Backend Lab</h1>
-            <p className="hero-subtitle">
+            <h1 className="hero-title">BackendLab</h1>
+            {/* <p className="hero-subtitle">
               Interactive API simulation environment showcasing backend engineering depth.
-            </p>
+            </p> */}
 
             <div className="env-table">
               <div className="env-row"><span className="env-key">Framework Mode</span><span className="env-val framework-val">{env.framework}</span></div>

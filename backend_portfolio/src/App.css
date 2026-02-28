@@ -1035,3 +1035,209 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .project-content-col { padding: 1.5rem; }
   .about-layout { gap: 2rem; }
 }
+
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .hero-title-main,
+  .hero-title-lab {
+    font-size: 2rem;
+  }
+  
+  .hero-title-lab {
+    font-size: 1.4rem; /* 30% reduced from 2rem */
+    margin-left: 0.25rem;
+  }
+
+  .hero-info {
+    order: 2;
+    width: 100%;
+  }
+
+  .hero-image-wrap {
+    order: 1;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .hero-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .env-table {
+    margin: 1.5rem 0;
+    font-size: 0.85rem;
+  }
+
+  .env-row {
+    padding: 0.6rem 0;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .arch-flow {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .arch-block-wrap {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .arch-arrow {
+    transform: rotate(90deg);
+    margin: 0.25rem 0;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .metric-card {
+    padding: 1.25rem;
+  }
+
+  .section-header {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-box {
+    width: 90%;
+    max-width: 400px;
+    padding: 1.25rem;
+  }
+
+  .modal-points {
+    padding-left: 0.25rem;
+  }
+
+  .modal-point {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* Additional breakpoint for very small devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-title-main,
+  .hero-title-lab {
+    font-size: 1.75rem;
+  }
+  
+  .hero-title-lab {
+    font-size: 1.225rem; /* 30% reduced */
+  }
+
+  .image-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .arch-block {
+    padding: 0.75rem;
+  }
+
+  .arch-block-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-inner {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .hero-title-lab {
+    font-size: 1.575rem; /* 30% reduced */
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arch-flow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .arch-block-wrap {
+    width: calc(33.33% - 1rem);
+  }
+
+  .arch-arrow {
+    display: none;
+  }
+}
+
+/* Smooth transitions */
+.hero-title,
+.hero-title-main,
+.hero-title-lab,
+.hero-inner,
+.btn-primary,
+.btn-secondary,
+.metric-card,
+.arch-block {
+  transition: all 0.3s ease;
+}
+
+/* Better touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+  button,
+  .arch-block,
+  .modal-close {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-height: 44px;
+  }
+}
