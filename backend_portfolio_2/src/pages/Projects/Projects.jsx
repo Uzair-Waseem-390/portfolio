@@ -21,7 +21,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'Humanitarian API',
-    image: '/images/gazabridge.png',
+    image: '/images/gazabridge.webp',
     description:
       'A humanitarian Django REST Framework API connecting Palestinian individuals with global volunteers offering mentorship, courses, live sessions, and curated resources. Built with production-grade infrastructure — JWT auth, Redis-backed token blacklisting, Celery async tasks, and a custom rate-limiting middleware.',
     highlights: [
@@ -53,7 +53,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'SaaS Platform',
-    image: '/images/School Management System.png',
+    image: '/images/School Management System.webp',
     description:
       'A fully functional SaaS-based School Management System designed to manage multi-branch institutions under a single platform. Focuses heavily on financial intelligence, institutional workflows, and structured role management — suitable for real-world deployment.',
     highlights: [
@@ -85,7 +85,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'AI Automation System',
-    image: '/images/pathweaver.png',
+    image: '/images/pathweaver.webp',
     description:
       'An AI-powered job assistant that automates the entire job search pipeline — scraping listings, parsing your resume, scoring compatibility, optimizing your CV per job, and sending email notifications. Not just endpoints: a fully orchestrated async system built around Celery, Redis, and scheduled task automation.',
     highlights: [
@@ -117,7 +117,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'eCommerce App',
-    image: '/images/UzairMart.png',
+    image: '/images/UzairMart.webp',
     description:
       'A Django-based eCommerce web application simulating a real-world online store. Focused heavily on backend logic, user authentication security, and real-world cart handling complexity — including multi-item cart, email verification, and secure password reset.',
     highlights: [
@@ -150,7 +150,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'AI Tool',
-    image: '/images/Datavo.png',
+    image: '/images/Datavo.webp',
     description:
       'An AI-powered system that generates clean, structured database schemas — but only after refining requirements through structured clarification. Unlike generic LLM schema generators, Datavo asks questions, avoids assumptions, and produces structured output.',
     highlights: [
@@ -182,7 +182,7 @@ const PROJECTS = [
     },
     status: 'completed',
     type: 'AI SaaS Tool',
-    image: '/images/BusinessPulse.png',
+    image: '/images/BusinessPulse.webp',
     description:
       'A SaaS-based AI decision support system for low-budget startups and small business owners. Focuses on structured business data, scenario-based decision testing, and actionable insights — built with a marketing-first mindset, not hype-driven AI features.',
     highlights: [
