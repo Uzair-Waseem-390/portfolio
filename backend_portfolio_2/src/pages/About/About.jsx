@@ -506,7 +506,7 @@ export default function About({ onNavigate }) {
                   {/* Right links */}
                   <div className="space-y-3">
                     <a
-                      href="/src/assets/images/Uzair Waseem – Backend Developer Resume.pdf"
+                      href="/images/Uzair Waseem – Backend Developer Resume.pdf"
                       target="_blank"
                       rel="noreferrer"
                       className={`btn-primary flex items-center justify-between gap-3 w-full px-5 py-4 ${accentFill} text-white rounded-xl shadow-lg group`}
