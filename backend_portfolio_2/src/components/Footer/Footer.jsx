@@ -35,7 +35,7 @@ export default function Footer({ onNavigate }) {
           </div>
 
           <div className="text-center md:text-right animate-slide-right">
-            <p className="text-xs font-mono text-gray-600">Backend Lab v1.0</p>
+            <p className="text-xs font-mono text-gray-600">Backend Lab v2.0</p>
             <p className="text-xs font-mono text-gray-700 mt-0.5">Simulated API Environment</p>
           </div>
         </div>
