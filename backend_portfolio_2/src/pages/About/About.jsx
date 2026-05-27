@@ -491,7 +491,7 @@ export default function About({ onNavigate }) {
                         'Backend Developer (Django / FastAPI)',
                         'API Engineer',
                         'Full Stack with Backend Focus',
-                        'Remote or On-site — Karachi, PK',
+                        'Remote or On-site — Faisalabad, PK',
                       ].map(role => (
                         <div key={role} className="flex items-center gap-2 text-xs font-mono text-gray-400">
                           <svg className={`w-3.5 h-3.5 shrink-0 ${accentColor}`} fill="currentColor" viewBox="0 0 20 20">

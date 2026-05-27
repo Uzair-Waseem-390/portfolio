@@ -160,7 +160,7 @@ export default function Dashboard({ onNavigate }) {
             <div className="relative">
               <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl overflow-hidden border-2 border-gray-700 bg-gray-900 shadow-2xl shadow-black/50">
                 <img
-                  src="/images/uzair.png"
+                  src="./images/uzair.png"
                   alt="Uzair Waseem"
                   className="w-full h-full object-cover"
                   onError={e => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex' }}
