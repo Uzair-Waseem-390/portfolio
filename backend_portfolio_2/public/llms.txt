@@ -1,0 +1,41 @@
+# Uzair Waseem Portfolio
+
+> Backend Developer, AI Engineer, and Flutter Developer building scalable real-world software systems.
+
+## Main Website
+- Homepage: https://uzair-waseem.vercel.app/
+
+## About
+Uzair Waseem is a Software Engineer and Backend Developer specializing in Django, FastAPI, scalable backend systems, AI powered applications, and Flutter development.
+
+## Main Projects
+- GazaBridge — Volunteer-driven global learning platform connecting people worldwide through free digital education and mentorship.
+- PathWeaver — AI Job Assistant
+- Escape-X — Story-based game project focused on immersive gameplay and storytelling.
+
+## Skills
+- Python
+- Django
+- FastAPI
+- Flutter
+- React
+- REST APIs
+- Artificial Intelligence
+- Machine Learning
+- Backend Development
+- System design
+- Full Stack Development
+
+## Focus Areas
+- Scalable Backend Systems
+- AI Applications
+- Production-Ready APIs
+- Mobile App Development
+- Real-World Software Engineering
+
+## Organization
+- GazaBridge
+
+## Social Links
+- GitHub: https://github.com/Uzair-Waseem-390
+- LinkedIn: https://www.linkedin.com/in/uzair-waseem-digital/
