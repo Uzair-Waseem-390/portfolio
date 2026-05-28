@@ -195,7 +195,7 @@ export default function About({ onNavigate }) {
                 <span className="text-gray-700">/</span>
                 <span className="text-xs font-mono text-gray-400">About Engineer</span>
               </div>
-              <h1 className="text-xl font-mono font-bold text-white">About Engineer</h1>
+              <h2 className="text-xl font-mono font-bold text-white">About Engineer</h2>
             </div>
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-1.5">
@@ -282,7 +282,7 @@ export default function About({ onNavigate }) {
                   <div className={`w-1.5 h-1.5 rounded-full ${mode === 'django' ? 'bg-emerald-400' : 'bg-blue-400'}`} />
                   Backend Engineer
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-mono font-bold text-white mb-1">Uzair Waseem</h2>
+                <h1 className="text-3xl sm:text-4xl font-mono font-bold text-white mb-1">Uzair Waseem</h1>
                 <p className="text-sm font-mono text-gray-500">
                   Building backend systems that are designed to last — not just to ship.
                 </p>

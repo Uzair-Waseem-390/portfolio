@@ -4,19 +4,45 @@ export default function LoadingScreen({ onDone }) {
   const [exiting, setExiting] = useState(false)
 
   useEffect(() => {
-    // Start exit after bar animation completes
-    const exitTimer = setTimeout(() => {
+    let minTimePassed = false
+    let imageLoaded = false
+    
+    // Fallback maximum timeout to prevent infinite loading
+    const maxTimeout = setTimeout(() => {
+      if (!exiting) triggerExit()
+    }, 6000)
+
+    const triggerExit = () => {
       setExiting(true)
+      setTimeout(() => {
+        onDone()
+        clearTimeout(maxTimeout)
+      }, 550) // wait for exit animation
+    }
+
+    // Check when minimum time is passed (to show animation)
+    const minTimer = setTimeout(() => {
+      minTimePassed = true
+      if (imageLoaded) triggerExit()
     }, 1700)
 
-    // Notify parent after full exit
-    const doneTimer = setTimeout(() => {
-      onDone()
-    }, 2250)
+    // Preload the main hero image
+    const img = new Image()
+    img.src = '/images/uzair.webp'
+    img.onload = () => {
+      imageLoaded = true
+      if (minTimePassed) triggerExit()
+    }
+    img.onerror = () => {
+      imageLoaded = true // proceed anyway if image fails
+      if (minTimePassed) triggerExit()
+    }
 
     return () => {
-      clearTimeout(exitTimer)
-      clearTimeout(doneTimer)
+      clearTimeout(minTimer)
+      clearTimeout(maxTimeout)
+      img.onload = null
+      img.onerror = null
     }
   }, [onDone])
 
