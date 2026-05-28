@@ -47,7 +47,7 @@ export default function LoadingScreen({ onDone }) {
 
       {/* Status text */}
       <div className="absolute bottom-10 text-xs font-mono text-gray-700 tracking-widest uppercase">
-        Initializing v1.0
+        Initializing v2.0
       </div>
     </div>
   )
