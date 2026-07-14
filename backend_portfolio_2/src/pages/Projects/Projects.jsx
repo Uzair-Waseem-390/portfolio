@@ -42,6 +42,38 @@ const PROJECTS = [
   },
   {
     id: 2,
+    title: 'AlphaPK — Wholesale Inventory & Accounting System',
+    frameworks: ['django'],
+    tags: ['Django', 'DRF', 'FIFO Ledger', 'WeasyPrint', 'PostgreSQL'],
+    tagIcons: {
+      Django:        { color: 'text-green-400 border-green-800 bg-green-950/30' },
+      DRF:           { color: 'text-emerald-400 border-emerald-800 bg-emerald-950/30' },
+      'FIFO Ledger': { color: 'text-pink-400 border-pink-800 bg-pink-950/30' },
+      WeasyPrint:    { color: 'text-yellow-400 border-yellow-800 bg-yellow-950/30' },
+      PostgreSQL:    { color: 'text-indigo-400 border-indigo-800 bg-indigo-950/30' },
+    },
+    status: 'completed',
+    type: 'Wholesale/Inventory Backend',
+    image: '/images/alphapk.webp',
+    description:
+      'A backend for a wholesale/retail distribution and accounting system — inventory, purchasing, invoicing, payments, returns, cash flow, and financial ledger reporting. Built with a disciplined selectors/services layer per app rather than fat DRF views, and a FIFO ledger that tracks real inventory costing across purchases and returns.',
+    highlights: [
+      'FIFO ledger for real inventory costing across purchases/returns',
+      'Layered selectors/services architecture per app, not fat views',
+      'Custom email-as-primary-key user model with role-derived permissions',
+      'WeasyPrint-generated PDF invoices, JazzCash/Easypaisa payment methods',
+    ],
+    architecture: [
+      { k: 'Backend', v: 'Django REST Framework, selectors/services layers' },
+      { k: 'Costing', v: 'FIFO ledger tracks purchase-batch consumption' },
+      { k: 'Auth',    v: 'Custom User model (email PK) + SimpleJWT' },
+      { k: 'PDF',     v: 'WeasyPrint invoice generation' },
+    ],
+    github: 'https://github.com/Uzair-Waseem-390/AlphaPK',
+    linkedin: null,
+  },
+  {
+    id: 3,
     title: 'School Management System',
     frameworks: ['django'],
     tags: ['Django', 'SaaS', 'Multi-Branch', 'RBAC', 'PostgreSQL'],
@@ -73,7 +105,7 @@ const PROJECTS = [
     linkedin: 'https://www.linkedin.com/posts/uzair-waseem-digital_%F0%9D%98%BC%F0%9D%99%A8%F0%9D%99%A8%F0%9D%99%96%F0%9D%99%A1%F0%9D%99%96%F0%9D%99%A2%F0%9D%99%AA%F0%9D%99%96%F0%9D%99%A1%F0%9D%99%96%F0%9D%99%9E%F0%9D%99%A0%F0%9D%99%AA%F0%9D%99%A2-this-one-activity-7430745190128046080-sDeg',
   },
   {
-    id: 3,
+    id: 4,
     title: 'PathWeaver — AI Job Assistant',
     frameworks: ['django'],
     tags: ['Django', 'DRF', 'Celery Beat', 'AI Agents', 'PostgreSQL'],
@@ -105,7 +137,7 @@ const PROJECTS = [
     linkedin: 'https://www.linkedin.com/posts/uzair-waseem-digital_%F0%9D%97%94%F0%9D%98%80%F0%9D%98%80%F0%9D%97%AE%F0%9D%97%B9%F0%9D%97%AE%F0%9D%97%BA%F0%9D%98%82%F0%9D%97%AE%F0%9D%97%B9%F0%9D%97%AE%F0%9D%97%B6%F0%9D%97%B8%F0%9D%98%82%F0%9D%97%BA-this-is-activity-7440292374653612032-L8GZ',
   },
   {
-    id: 4,
+    id: 5,
     title: 'UzairMart — Django eCommerce',
     frameworks: ['django'],
     tags: ['Django', 'Authentication', 'Cart Logic', 'Email Verification', 'PostgreSQL'],
@@ -136,41 +168,9 @@ const PROJECTS = [
     github: 'https://github.com/Uzair-Waseem-390/uzairmart',
     linkedin: 'https://www.linkedin.com/posts/uzair-waseem-digital_%F0%9D%98%BC%F0%9D%99%A8%F0%9D%99%A8%F0%9D%99%96%F0%9D%99%A1%F0%9D%99%96%F0%9D%99%A2%F0%9D%99%AA%F0%9D%99%96%F0%9D%99%A1%F0%9D%99%96%F0%9D%99%9E%F0%9D%99%A0%F0%9D%99%AA%F0%9D%99%A2-another-activity-7420964103248039936-AHLP',
   },
-  {
-    id: 7,
-    title: 'AlphaPK — Wholesale Inventory & Accounting System',
-    frameworks: ['django'],
-    tags: ['Django', 'DRF', 'FIFO Ledger', 'WeasyPrint', 'PostgreSQL'],
-    tagIcons: {
-      Django:        { color: 'text-green-400 border-green-800 bg-green-950/30' },
-      DRF:           { color: 'text-emerald-400 border-emerald-800 bg-emerald-950/30' },
-      'FIFO Ledger': { color: 'text-pink-400 border-pink-800 bg-pink-950/30' },
-      WeasyPrint:    { color: 'text-yellow-400 border-yellow-800 bg-yellow-950/30' },
-      PostgreSQL:    { color: 'text-indigo-400 border-indigo-800 bg-indigo-950/30' },
-    },
-    status: 'completed',
-    type: 'Wholesale/Inventory Backend',
-    image: '/images/alphapk.webp',
-    description:
-      'A backend for a wholesale/retail distribution and accounting system — inventory, purchasing, invoicing, payments, returns, cash flow, and financial ledger reporting. Built with a disciplined selectors/services layer per app rather than fat DRF views, and a FIFO ledger that tracks real inventory costing across purchases and returns.',
-    highlights: [
-      'FIFO ledger for real inventory costing across purchases/returns',
-      'Layered selectors/services architecture per app, not fat views',
-      'Custom email-as-primary-key user model with role-derived permissions',
-      'WeasyPrint-generated PDF invoices, JazzCash/Easypaisa payment methods',
-    ],
-    architecture: [
-      { k: 'Backend', v: 'Django REST Framework, selectors/services layers' },
-      { k: 'Costing', v: 'FIFO ledger tracks purchase-batch consumption' },
-      { k: 'Auth',    v: 'Custom User model (email PK) + SimpleJWT' },
-      { k: 'PDF',     v: 'WeasyPrint invoice generation' },
-    ],
-    github: 'https://github.com/Uzair-Waseem-390/AlphaPK',
-    linkedin: null,
-  },
   // ── FastAPI ───────────────────────────────────────────────
   {
-    id: 5,
+    id: 6,
     title: 'Datavo — AI Database Schema Architect',
     frameworks: ['fastapi'],
     tags: ['FastAPI', 'React', 'OpenAI SDK', 'AI Agents', 'PostgreSQL'],
@@ -202,7 +202,7 @@ const PROJECTS = [
     linkedin: 'https://www.linkedin.com/posts/uzair-waseem-digital_%F0%9D%98%BC%F0%9D%99%A8%F0%9D%99%A8%F0%9D%99%96%F0%9D%99%A1%F0%9D%99%96%F0%9D%99%A2%F0%9D%99%AA%F0%9D%99%96%F0%9D%99%A1%F0%9D%99%96%F0%9D%99%9E%F0%9D%99%A0%F0%9D%99%AA%F0%9D%99%A2-some-projects-activity-7433219597077700608-KByW',
   },
   {
-    id: 6,
+    id: 7,
     title: 'BusinessPulse — AI Decision Support',
     frameworks: ['fastapi'],
     tags: ['Next.js', 'JavaScript', 'AI', 'Data-Driven', 'SaaS'],
