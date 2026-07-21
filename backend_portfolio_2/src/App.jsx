@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { FrameworkProvider } from './context/FrameworkContext'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -43,6 +44,7 @@ function App() {
           <Footer onNavigate={navigate} />
         </div>
       )}
+      <SpeedInsights />
     </FrameworkProvider>
   )
 }
