@@ -73,38 +73,6 @@ const PROJECTS = [
     linkedin: null,
   },
   {
-    id: 8,
-    title: 'Alfa — Wholesale Inventory & Accounting System',
-    frameworks: ['django'],
-    tags: ['Django', 'DRF', 'FIFO Ledger', 'WeasyPrint', 'PostgreSQL'],
-    tagIcons: {
-      Django:        { color: 'text-green-400 border-green-800 bg-green-950/30' },
-      DRF:           { color: 'text-emerald-400 border-emerald-800 bg-emerald-950/30' },
-      'FIFO Ledger': { color: 'text-pink-400 border-pink-800 bg-pink-950/30' },
-      WeasyPrint:    { color: 'text-yellow-400 border-yellow-800 bg-yellow-950/30' },
-      PostgreSQL:    { color: 'text-indigo-400 border-indigo-800 bg-indigo-950/30' },
-    },
-    status: 'completed',
-    type: 'Wholesale/Inventory Backend',
-    image: '/images/alfa.webp',
-    description:
-      'Same engine as AlphaPK, deployed independently for a second wholesale/retail trading client — buys finished stock and resells at a margin. Isolated deployment and data, same FIFO ledger and billing core that keeps purchases, returns, and sales accounting-correct.',
-    highlights: [
-      'Independent production deployment of the AlphaPK codebase for a separate client',
-      'FIFO ledger for real inventory costing across purchases/returns',
-      'Layered selectors/services architecture per app, not fat views',
-      'WeasyPrint-generated PDF invoices, local payment method support',
-    ],
-    architecture: [
-      { k: 'Backend', v: 'Django REST Framework, selectors/services layers' },
-      { k: 'Costing', v: 'FIFO ledger tracks purchase-batch consumption' },
-      { k: 'Auth',    v: 'Custom User model (email PK) + SimpleJWT' },
-      { k: 'PDF',     v: 'WeasyPrint invoice generation' },
-    ],
-    github: 'https://github.com/Uzair-Waseem-3900/alfa',
-    linkedin: null,
-  },
-  {
     id: 3,
     title: 'School Management System',
     frameworks: ['django'],
