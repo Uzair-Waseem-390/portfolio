@@ -105,37 +105,6 @@ const PROJECTS = [
     linkedin: null,
   },
   {
-    id: 9,
-    title: 'Kerala Industries — Manufacturing & Production ERP',
-    frameworks: ['django'],
-    tags: ['Django', 'DRF', 'Production Costing', 'PostgreSQL'],
-    tagIcons: {
-      Django:              { color: 'text-green-400 border-green-800 bg-green-950/30' },
-      DRF:                 { color: 'text-emerald-400 border-emerald-800 bg-emerald-950/30' },
-      'Production Costing': { color: 'text-pink-400 border-pink-800 bg-pink-950/30' },
-      PostgreSQL:          { color: 'text-indigo-400 border-indigo-800 bg-indigo-950/30' },
-    },
-    status: 'completed',
-    type: 'Manufacturing Backend',
-    image: '/images/kerala-industries.webp',
-    description:
-      'A backend for a manufacturing operation with a fundamentally different flow than trading inventory: raw material is purchased, processed, converted into finished goods, and sold. Tracks costing independently at each stage — raw material, processing/conversion, and finished goods — instead of treating everything as one flat stock pool.',
-    highlights: [
-      'Raw material procurement tracked independently from finished stock',
-      'Processing/conversion stage with per-batch yield and cost tracking',
-      'Finished goods inventory kept distinct from raw stock',
-      'Stage-aware costing carries landed raw material cost through to final product cost',
-    ],
-    architecture: [
-      { k: 'Backend', v: 'Django REST Framework, selectors/services layers' },
-      { k: 'Flow',     v: 'Raw material → processing → finished goods → sale' },
-      { k: 'Costing',  v: 'Stage-aware costing across the production pipeline' },
-      { k: 'DB',       v: 'PostgreSQL' },
-    ],
-    github: 'https://github.com/Uzair-Waseem-390/kerala_industries',
-    linkedin: null,
-  },
-  {
     id: 3,
     title: 'School Management System',
     frameworks: ['django'],
