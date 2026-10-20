@@ -4,27 +4,34 @@ export default function LoadingScreen({ onDone }) {
   const [exiting, setExiting] = useState(false)
 
   useEffect(() => {
+    // Detect search engine bots / crawlers to render content immediately
+    const isBot = typeof navigator !== 'undefined' && /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent || '')
+    if (isBot) {
+      onDone()
+      return
+    }
+
     let minTimePassed = false
     let imageLoaded = false
     
     // Fallback maximum timeout to prevent infinite loading
     const maxTimeout = setTimeout(() => {
       if (!exiting) triggerExit()
-    }, 6000)
+    }, 3000)
 
     const triggerExit = () => {
       setExiting(true)
       setTimeout(() => {
         onDone()
         clearTimeout(maxTimeout)
-      }, 550) // wait for exit animation
+      }, 350) // wait for exit animation
     }
 
-    // Check when minimum time is passed (to show animation)
+    // Smooth entry animation that completes fast enough to preserve good Core Web Vitals (< 1s)
     const minTimer = setTimeout(() => {
       minTimePassed = true
       if (imageLoaded) triggerExit()
-    }, 1700)
+    }, 450)
 
     // Preload the main hero image
     const img = new Image()

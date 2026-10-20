@@ -221,7 +221,11 @@ export default function About({ onNavigate }) {
                 <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-2 border-gray-700 bg-gray-900 shadow-2xl shadow-black/60">
                   <img
                     src="/images/uzair.webp"
-                    alt="Uzair Waseem"
+                    alt="Uzair Waseem - Backend Engineer & AI Developer"
+                    width="320"
+                    height="320"
+                    loading="eager"
+                    decoding="async"
                     className="w-full h-full object-cover"
                     onError={e => {
                       e.target.style.display = 'none'

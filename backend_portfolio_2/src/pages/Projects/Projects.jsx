@@ -405,6 +405,10 @@ function ProjectCard({ project, index, mode }) {
           <img
             src={project.image}
             alt={project.title}
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="340"
             className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
             onError={e => {
               e.target.style.display = 'none'
@@ -537,7 +541,7 @@ export default function Projects({ onNavigate }) {
                 <span className="text-gray-700">/</span>
                 <span className="text-xs font-mono text-gray-400">Projects</span>
               </div>
-              <h1 className="text-xl font-mono font-bold text-white">Projects</h1>
+              <h1 className="text-xl font-mono font-bold text-white">Featured Backend &amp; AI Projects</h1>
             </div>
             <div className="flex items-center gap-3">
               <span className={`text-xs font-mono px-2.5 py-1 rounded-lg border ${accentBadge}`}>

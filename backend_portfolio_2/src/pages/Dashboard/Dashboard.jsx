@@ -110,10 +110,14 @@ export default function Dashboard({ onNavigate }) {
 
             <div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold text-white leading-tight">
-                Simulated Production<br />
-                <span className={mode === 'django' ? 'text-emerald-400' : 'text-blue-400'}>Environment</span>
+                Uzair Waseem <span className="text-gray-500 font-normal">|</span><br />
+                <span className={mode === 'django' ? 'text-emerald-400' : 'text-blue-400'}>
+                  Backend &amp; AI Systems Engineer
+                </span>
               </h1>
-              {/* <p className="text-sm text-gray-500 font-mono mt-2">A backend engineering showcase — not a generic portfolio.</p> */}
+              <p className="text-xs sm:text-sm text-gray-400 font-mono mt-2">
+                Simulated Production Environment · High-Load Architecture Showcase
+              </p>
             </div>
 
             {/* Env card */}
@@ -155,18 +159,21 @@ export default function Dashboard({ onNavigate }) {
           </div>
 
           {/* Right: Photo */}
-          {/* Right: Photo */}
           <div className="flex flex-col items-center gap-6 animate-slide-right w-full max-w-md lg:max-w-none">
             <div className="relative">
               <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl overflow-hidden border-2 border-gray-700 bg-gray-900 shadow-2xl shadow-black/50">
                 <img
-                  src="./images/uzair.webp"
-                  alt="Uzair Waseem"
+                  src="/images/uzair.webp"
+                  alt="Uzair Waseem - Backend Engineer"
+                  width="256"
+                  height="256"
+                  loading="eager"
+                  decoding="async"
                   className="w-full h-full object-cover"
                   onError={e => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex' }}
                 />
                 <div className="w-full h-full items-center justify-center bg-gray-900 text-gray-600 font-mono text-sm" style={{ display: 'none' }}>
-                  <div className="text-center"><div className="text-4xl mb-2">👤</div><div className="text-xs">uzair.png</div></div>
+                  <div className="text-center"><div className="text-4xl mb-2">👤</div><div className="text-xs">uzair.webp</div></div>
                 </div>
               </div>
               <div className="absolute -bottom-3 -right-3 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 animate-fade-in delay-400">
@@ -223,7 +230,7 @@ export default function Dashboard({ onNavigate }) {
       <section className="w-full border-y border-gray-800 bg-gray-900/30 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5">
           <div className="flex items-center gap-3">
-            <div className="text-xs font-mono text-gray-500 uppercase tracking-widest">System Architecture</div>
+            <h2 className="text-xs font-mono text-gray-500 uppercase tracking-widest">System Architecture</h2>
             <div className="flex-1 h-px bg-gray-800" />
             <span className="text-xs font-mono text-gray-600">click any block</span>
           </div>
@@ -287,7 +294,7 @@ export default function Dashboard({ onNavigate }) {
       {/* ── METRICS ───────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex items-center gap-3 mb-6">
-          <div className="text-xs font-mono text-gray-500 uppercase tracking-widest">System Metrics</div>
+          <h2 className="text-xs font-mono text-gray-500 uppercase tracking-widest">System Metrics</h2>
           <div className="flex-1 h-px bg-gray-800" />
           <span className={`text-xs font-mono ${mode === 'django' ? 'text-green-500' : 'text-blue-500'}`}>
             {mode === 'django' ? 'Django' : 'FastAPI'} Mode
@@ -303,7 +310,7 @@ export default function Dashboard({ onNavigate }) {
       {/* ── FRAMEWORK DIFF ────────────────────────────────── */}
       <section className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pb-10">
         <div className="flex items-center gap-3 mb-6">
-          <div className="text-xs font-mono text-gray-500 uppercase tracking-widest">Framework Behavior</div>
+          <h2 className="text-xs font-mono text-gray-500 uppercase tracking-widest">Framework Behavior</h2>
           <div className="flex-1 h-px bg-gray-800" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -351,24 +358,27 @@ export default function Dashboard({ onNavigate }) {
       {/* ── CTA BUTTONS ───────────────────────────────────── */}
       <section className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pb-16">
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center animate-fade-up delay-200">
-          <button
-            onClick={() => onNavigate('playground')}
-            className="btn-primary w-full sm:w-auto text-center px-7 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-mono rounded-xl"
+          <a
+            href="/playground"
+            onClick={(e) => { e.preventDefault(); onNavigate('playground') }}
+            className="btn-primary w-full sm:w-auto text-center px-7 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-mono rounded-xl cursor-pointer"
           >
             Enter API Playground →
-          </button>
-          <button
-            onClick={() => onNavigate('architecture')}
-            className="btn-outline w-full sm:w-auto text-center px-7 py-3 border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white text-sm font-mono rounded-xl"
+          </a>
+          <a
+            href="/architecture"
+            onClick={(e) => { e.preventDefault(); onNavigate('architecture') }}
+            className="btn-outline w-full sm:w-auto text-center px-7 py-3 border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white text-sm font-mono rounded-xl cursor-pointer"
           >
             Read Architecture Decisions
-          </button>
-          <button
-            onClick={() => onNavigate('projects')}
-            className="btn-outline w-full sm:w-auto text-center px-7 py-3 border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white text-sm font-mono rounded-xl"
+          </a>
+          <a
+            href="/projects"
+            onClick={(e) => { e.preventDefault(); onNavigate('projects') }}
+            className="btn-outline w-full sm:w-auto text-center px-7 py-3 border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white text-sm font-mono rounded-xl cursor-pointer"
           >
             Explore Projects
-          </button>
+          </a>
         </div>
       </section>
     </div>
